@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pari Chowk Hostel Finder</title>
+    <link rel="stylesheet" href="project.css">
+    <style>
+         body{
+            background-image: url("futuristic-background-design_23-2148503793.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pari Chowk Hostel & PG Finder</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by name, facility, or price...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="filters">
+            <label for="gender" id="gen">Gender:</label>
+            <select id="gender">
+                <option value="all">All</option>
+                <option value="boys">Boys</option>
+                <option value="girls">Girls</option>
+            </select>
+            <label for="budget" id="max">Max Budget (₹):</label>
+            <input type="number" id="budget" placeholder="e.g., 8000">
+        </div>
+
+        <div id="results-container">
+            <!-- Cards will be dynamically added here -->
+        </div>
+
+    </main>
+    <main>
+        <!-- Modal Placeholder -->
+        <div id="details-modal" class="modal"></div>
+        
+    </main>
+    <footer>
+        <p>© 2024 Pari Chowk Stay Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
